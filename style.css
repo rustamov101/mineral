@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Rubik-R';
+    src: url(fonts/Rubik-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Rubik-L';
+    src: url(fonts/Rubik-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Rubik-M';
+    src: url(fonts/Rubik-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Rubik-B';
+    src: url(fonts/Rubik-Bold.ttf);
+    font-weight: 700;
+}
+
+
+
 
 * {
     margin: 0;
@@ -106,12 +130,12 @@ a {
 
 /* first section */
 
-.first h1{
+.h1 {
 font-size: 30px;
 font-family: 'Rubik', sans-serif;
 
 }
-.first .pad{
+.first .h1{
 padding-top: 20px;
 padding-bottom: 30px;
 }
@@ -141,12 +165,18 @@ padding-bottom: 30px;
     margin-left: 20px;
 }
 
-.first .pad2{
+
+
+.materials .pad2{
     padding: 40px 0;
+
+    font-size: 30px;
+font-family: 'Rubik', sans-serif;
 }
 
 /* Big cards */
-.first .cards-2 .card{
+
+.materials .cards-2 .card{
     width: 280px;
     height: 430px;
     border-radius: 10px;
@@ -158,7 +188,7 @@ padding-bottom: 30px;
     color: white;
 }
 
-.first .cards-2{
+.materials .cards-2{
     display: flex;
     justify-content: space-between;
 
@@ -251,7 +281,108 @@ padding-bottom: 30px;
 
 
 /* About */
-.about{}
-.about .main-t {
-    width: 560px;
+.about .container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Rubik', sans-serif;
 }
+.about .info-card{
+    width: 550px;
+    height: 300px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.about .main-t {
+    width: 460px;
+}
+.about .main-t p{
+    padding-top: 20px;
+}
+
+.about .info-card .sixty{
+padding: 70px;
+}
+
+.about .info-card .fifty{
+    padding: 70px;
+}
+
+.about .info-card h1{
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.about .info-card .sixty::after{
+    content: '';
+    position: absolute;
+    scale: 0.8;
+    top: 90px;
+    left: 150px;
+    background-image: url('icons/plus.svg');
+    width:20px;
+    height: 20px;
+    
+    background-position: center;
+    }
+
+
+
+
+    /* questions */
+
+    
+    .questions{
+        background-color: #DDDDDD;
+    }
+    .questions .container{
+       display: flex;
+    }
+    .questions .text-block{
+        width: 400px;
+        background-color: #a80e0e;
+    }
+
+    .questions .text-block .h1{
+        padding: 30px 0 20px 0;
+
+    }
+    .questions .text-block span{
+        color: #27AE60;
+        font-size: 22px;
+        font-family: 'Rubik', sans-serif;
+            
+    }
+    .questions .text-block p{
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif;
+        padding: 30px 0 35px 0;
+    }
+
+    .questions .text-block .call{
+        padding: 13px 35px;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 450;
+        color: white;
+        background-color: #27AE60;
+        border: solid 2px #27AE60;
+        border-radius: 5px;
+    }
+    .questions .text-block .call:active{
+       
+        
+        
+        border: solid 2px rgb(0, 0, 0);
+    }
