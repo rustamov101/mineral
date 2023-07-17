@@ -126,15 +126,79 @@
         </div>
 
         <div class="input-block">
-            <form action="">
-                <input type="text" placeholder="Имя" required>
-                <input type="number" placeholder="Телефон" required>
+            <form class="form">
+                <input type="text" placeholder="Имя" required class="text">
+                <input type="number" placeholder="Телефон" required class="number">
+                <textarea placeholder="Коментарии"></textarea>
+                <div class="check">
+                    <input type="checkbox" name="" id="check1">
+                    <label for="check1">Соглашение о персональных данных</label>
+                </div>
             </form>
         </div>
 
     </div>
 </section>
-    
+
+
+
+<!-- map & info -->
+
+<section class="map">
+    <div class="container">
+
+        <div class="map-left">
+            <h1 class="h1">Доставка</h1>
+            <h3 class="sub-info">Основная миссия компании Спец-транс — комплексные поставки нерудных материалов для корпоративных клиентов и частных лиц. Мы осуществлем доставку по Санкт-Петербургу и Ленинградской области.
+            </h3>
+            <p class="star" >Вы оставляете заявку через сайт или по телефону.</p>
+            <p class="star" >Мы производим точный расчет стоимости</p>
+            <p class="star" >Осуществляем поставку заказанного вами материала точно в срок</p>
+            <p class="star" >Соблюдаем своевременный документооборот</p>
+            <div class="parent-info">
+                <div class="adress-info">
+                    <h3>г. Санкт-Петербург,</h3>
+                    <p>Невский проспект, д. 12/2</p>
+                </div>
+                <div class="number-info">
+                <h3>+7 812 545 44 53</h3>
+                <p>Ежедневно с 08:00 до 24:00</p>  
+                </div>
+            </div>
+        </div>
+
+        <div class="map-right"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A019fbc1f8d9d071ff088abb267dd2ec887899e92016ef5986cbe5766ddbe6d72&amp;width=520&amp;height=820&amp;lang=ru_RU&amp;scroll=true"></script>
+        <button class="btn">Зона доставки</button>
+        <div class="round"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="f-block">
+           <a href=""> <div class="f-logo"><img src="img/footer.png" alt=""></div></a>
+            <p>Политика конфиденциальности © спец-транс, 2023</p>
+        </div>
+
+        <div class="s-block">
+            <a href="">Материалы</a>
+            <a href="">Услуги</a>
+        </div>
+
+        <div class="th-block">
+            <div class="all-icons">
+                <a href=""><img src="icons/vk.svg" alt=""></a>
+                <a href=""><img src="icons/face.svg" alt=""></a>
+                <a href=""><img src="icons/wat.svg" alt=""></a>
+            </div>
+
+
+            <button class="number">+7 928 245 15 20</button>
+        </div>
+    </div>
+</section>
 
    
 </body>
