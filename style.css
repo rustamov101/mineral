@@ -454,6 +454,60 @@ padding: 70px;
 }
 
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+
+/* прячем input checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+ 
+/* стили для метки */
+label {
+  color: #000;
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+ 
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+label:before {
+  content: " ";
+  color: white;
+  display: inline-block;
+  font: 20px/30px Arial;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 30px;
+  height: 30px;
+  background: #27AE60;
+  border: 1px solid #e3e3e3;
+  border-image: initial;
+  vertical-align: middle;
+}
+ 
+
+input:checked + label:before {
+    content: "✓";
+  }
+  /* disabled */
+  input:disabled + label:before {
+    background: #eee;
+    color: #aaa;
+  }
+
 
 
 
